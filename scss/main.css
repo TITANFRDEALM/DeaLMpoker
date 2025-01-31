@@ -11972,7 +11972,7 @@ html {
 }
 
 main {
-  margin-bottom: 200px;
+  margin-bottom: 210px;
 }
 
 footer.footer {
@@ -11997,7 +11997,7 @@ p {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url(../images/tasse2.JPG);
+  background-image: url(../images/tasse\ dealm.JPG);
   background-size: cover;
   filter: brightness(0.3);
 }
@@ -12010,4 +12010,65 @@ p {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: fill;
+     object-fit: fill; /* pour que l'image remplisse le conteneur */
+}
+
+.carousel {
+  margin-top: 20px;
+  margin-right: 100px;
+  margin-bottom: 20px;
+  margin-left: 100px;
+}
+
+.img-height {
+  height: 200px; /* Adjust this value to your desired height */
+  -o-object-fit: cover;
+     object-fit: cover; /* or contain, depending on how you want the image to fit */
+}
+
+.container-padding {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.img-opacity {
+  opacity: 0.6; /* Adjust this value for the desired opacity */
+  transition: opacity 0.3s ease; /* Add a transition for a smooth effect */
+}
+
+.image-container {
+  position: relative; /* Needed for absolute positioning of the overlay */
+  overflow: hidden; /* Hide the overlay when it extends outside the container */
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.3s ease;
+}
+
+.image-title {
+  color: white;
+}
+
+.image-container:hover .img-opacity {
+  opacity: 0.3; /* Image becomes fully opaque on hover */
+}
+
+.image-container:hover .image-overlay {
+  opacity: 1;
 }/*# sourceMappingURL=main.css.map */
