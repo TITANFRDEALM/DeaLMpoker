@@ -1,13 +1,59 @@
 @import url("/node_modules/bootstrap-icons/font/bootstrap-icons.css");
 @import "custom";
 
+/* Header */
+
+/* Ajoutez ces styles dans votre fichier CSS ou dans une balise <style> */
+.navbar-collapse {
+    top: 100px; /* Ajustez cette valeur si la hauteur de votre barre de navigation change */
+    left: 0;
+    width: 100%; /* Pour que le menu prenne toute la largeur */
+    background-color:$primary; /* Couleur de fond de votre navbar (celle que vous avez déjà) */
+    z-index: 1030; /* Assurez-vous qu'il est au-dessus des autres éléments (1030 est la valeur par défaut de Bootstrap pour les navbars) */
+    /*  Optionnel : Pour une animation plus douce */
+    transition: transform 0.1s ease-in-out; /* Ajout d'une transition */
+    transform: translateY(-100%); /* Cache le menu au départ */
+}
+
+.navbar-collapse.show {
+    transform: translateY(0); /* Affiche le menu quand le bouton est cliqué */
+}
+
+/* Styles pour les liens dans le menu déroulant (optionnel) */
+.navbar-nav .nav-link {
+    text-align: center;
+    color: white !important; /* Couleur du texte en blanc (important pour la lisibilité sur fond bleu) */
+}
+
+/* Style pour le bouton burger (optionnel) */
+.navbar-toggler {
+    z-index: 1031; /* Pour être sûr que le bouton burger est cliquable même quand le menu est ouvert */
+}
+
+/* Media query pour les écrans plus petits (si nécessaire) */
+@media (max-width: 991.98px) { /* Ajustez la valeur selon votre breakpoint Bootstrap */
+    .navbar-collapse {
+        top: 100px; /* Ajustez si nécessaire */
+        /* d'autres styles spécifiques aux petits écrans */
+    }
+}
+
+/* FIN du Header */
+
+body {
+    display: flex;
+    flex-direction: column; /* On empile les éléments verticalement */
+    min-height: 100vh; /* Le body occupe toute la hauteur de l'écran */
+  }
+
 html{
     position: relative;
     min-height: 100%;
 }
 
 main{
-    margin-bottom: 210px;
+    flex: 1; /* Il grandit pour remplir l'espace disponible */
+    margin-bottom: 250px;
 }
 
 footer.footer{
@@ -107,4 +153,8 @@ p{
 
 .image-container:hover .image-overlay {
     opacity: 1;
+}
+
+.form-label{
+    color: $primary;
 }
