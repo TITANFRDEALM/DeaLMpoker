@@ -5,6 +5,8 @@
 
 /* Ajoutez ces styles dans votre fichier CSS ou dans une balise <style> */
 .navbar-collapse {
+    justify-content: center;
+    margin: auto;
     top: 100px; /* Ajustez cette valeur si la hauteur de votre barre de navigation change */
     left: 0;
     width: 100%; /* Pour que le menu prenne toute la largeur */
@@ -12,7 +14,6 @@
     z-index: 1030; /* Assurez-vous qu'il est au-dessus des autres éléments (1030 est la valeur par défaut de Bootstrap pour les navbars) */
     /*  Optionnel : Pour une animation plus douce */
     transition: transform 0.1s ease-in-out; /* Ajout d'une transition */
-    transform: translateY(-100%); /* Cache le menu au départ */
 }
 
 .navbar-collapse.show {
@@ -96,19 +97,6 @@ p{
     }
 }
 
-.carousel-inner img {
-    width: 100%;
-    height: 300px;
-    object-fit: fill; /* pour que l'image remplisse le conteneur */
-  }
-
-  .carousel {
-    margin-top: 20px;
-    margin-right: 100px;
-    margin-bottom: 20px;
-    margin-left: 100px;
-  }
-
   .img-height {
     height: 200px; /* Adjust this value to your desired height */
     object-fit: cover; /* or contain, depending on how you want the image to fit */
@@ -120,7 +108,7 @@ p{
 }
 
 .img-opacity {
-    opacity: 0.6; /* Adjust this value for the desired opacity */
+    opacity: 1; /* Adjust this value for the desired opacity */
     transition: opacity 0.3s ease; /* Add a transition for a smooth effect */
 }
 

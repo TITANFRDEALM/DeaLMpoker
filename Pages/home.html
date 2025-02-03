@@ -2,7 +2,26 @@
     <div class="hero-scene-content">
         <p>WELCOME TO</p>
         <h1>DEAL M POKER</h1>
-        <button class="btn btn-primary">JOUER</button>
+        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Newsletter">POP IN</button>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="Newsletter" tabindex="-1" aria-labelledby="NewsletterLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="NewsletterLabel">ACTUALITÉ DEAL M</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Participe à la semaine 4
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">SEMAINE 4</button>
+                <button type="button" class="btn btn-primary">DEAL M ACADEMY</button>
+            </div>
+        </div>
     </div>
 </div>
 
@@ -14,7 +33,9 @@
                     <a href="/players">
                         <img class="w-100 rounded img-height img-opacity" src="/Images/players3.JPG" alt="Players">
                         <div class="image-overlay">
-                        <h1 class="image-title">PLAYERS</h1>
+                        <h1 class="image-title">JOUEUR(SES)</h1>
+                        <div class="action-image-buttons"> 
+                        <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#EditionPhotoModal"><i class="bi bi-person-badge"></i></button>
                     </a>
                     </div>
                 </div>
